@@ -4,9 +4,7 @@ const assertEqual = function(actual, expected) {
     : console.log(`😢 Assertion Failed: ${actual} !== ${expected}`);
 };
 
-const head = function(arr) {
-  return arr[0];
+const tail = function(arr) {
+  return arr.slice(1);
 };
 
-assertEqual(head([]), undefined);
-assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
